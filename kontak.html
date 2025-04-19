@@ -52,17 +52,13 @@
     document.getElementById("formWA").addEventListener("submit", function(event) {
       event.preventDefault();
   
-      // Ambil nilai input
       var nama = document.getElementById("nama").value;
       var pesan = document.getElementById("pesan").value;
   
-      // Nomor WhatsApp tujuan (gunakan format internasional, tanpa + atau 0 di depan)
       var noWA = "6289666629925"; // ganti dengan nomor kamu sendiri
-  
-      // Gabungkan pesan
+
       var teks = `Halo, saya ${nama}.%0A${pesan}`;
   
-      // Buka link WhatsApp
       window.open(`https://wa.me/${noWA}?text=${teks}`, "_blank");
     });
   </script>
